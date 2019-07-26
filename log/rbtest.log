@@ -1,0 +1,72 @@
+ruby testsuite list 5 as:
+===================================
+	[suite 1 ] Testcasedb
+	[suite 2 ] TestHexStr
+	[suite 3 ] TestXML
+	[suite 4 ] TestcaseDemo
+	[suite 5 ] TestBSInfo
+
+Enter Testcasedb::testMdb
+test mdb
+Testcasedb::testMdb retcode=[ 0 ]
+Exit Testcasedb::testMdb
+
+Enter Testcasedb::testcasePdb
+test pdb
+Testcasedb::testcasePdb retcode=[ 99999 ]
+errmsg=[ exp: 22 != 2 :real ]
+Exit Testcasedb::testcasePdb
+
+Enter Testcasedb::testHash_each
+Testcasedb::testHash_each retcode=[ 99999 ]
+errmsg=[ exp: 12 != 2 :real ]
+Exit Testcasedb::testHash_each
+
+Enter Testcasedb::testBase64
+Testcasedb::testBase64 retcode=[ 0 ]
+Exit Testcasedb::testBase64
+
+Enter TestHexStr::testbinlog
+codes len is: 59.
+000001	00 00 00 64 00 00 00 64 00 00 00 64 00 00 00 64 	...d...d...d...d
+000002	00 00 00 64 00 00 00 64 00 00 00 64 00 00 00 64 	...d...d...d...d
+000003	00 00 00 64 00 00 00 64 61 62 63 64 31 31 31 31 	...d...dabcd1111
+000004	31 31 39 38 37 67 68 68 6a 6a 69                	11987ghhjji
+codes len is: 59.
+TestHexStr::testbinlog retcode=[ 0 ]
+Exit TestHexStr::testbinlog
+
+Enter TestXML::testxml
+TestXML::testxml retcode=[ 0 ]
+Exit TestXML::testxml
+
+Enter TestXML::testXmapselect
+TestXML::testXmapselect retcode=[ 0 ]
+Exit TestXML::testXmapselect
+
+Enter TestcaseDemo::testDemoB
+test DemoB
+TestcaseDemo::testDemoB retcode=[ 0 ]
+Exit TestcaseDemo::testDemoB
+
+Enter TestcaseDemo::testDemoA
+test demoA
+TestcaseDemo::testDemoA retcode=[ 0 ]
+Exit TestcaseDemo::testDemoA
+
+Enter TestBSInfo::testBsinfo
+TagValue info is:
+attr_name:type=tagtype:2 	value=2	len=4 	isfix=true	
+attr_name:type=tagname:8 	value=TableName	len=40 	isfix=true	
+attr_name:type=tagvalue:8 	value=CBP_NODE	len=-1 	isfix=true	
+BSTestInfo info is:
+attr_name:type=cmdtype:2 	value=0	len=4 	isfix=true	
+attr_name:type=cmddesc:8 	value=	len=40 	isfix=true	
+TestBSInfo::testBsinfo retcode=[ 0 ]
+Exit TestBSInfo::testBsinfo
+
+****************************ruby testresult**********************************
+	testcase Total:		10
+	testcase Success:	8
+	testcase Failed:		2
+*************************testcase failed info********************************
